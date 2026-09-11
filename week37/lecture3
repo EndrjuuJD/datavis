@@ -1,0 +1,9 @@
+# saleslib.py1
+import pandas as pd
+from pathlib import Path
+
+DATA = Path(__file__).parent / "data"
+
+def load_sales():
+    """Load sales.csv with `date` parsed as datetimes."""
+    return pd.read_csv(DATA / "sales.csv", parse_dates=["date"])

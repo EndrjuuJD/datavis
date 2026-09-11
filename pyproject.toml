@@ -1,0 +1,20 @@
+[project]
+name = "datavis"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "Adrian", email = "adi.newjakub@gmail.com" }
+]
+requires-python = ">=3.14"
+dependencies = [
+    "pandas>=3.0.5",
+    "plotly>=7.0.0",
+]
+
+[project.scripts]
+datavis = "datavis:main"
+
+[build-system]
+requires = ["uv_build>=0.12.8,<0.13.0"]
+build-backend = "uv_build"
